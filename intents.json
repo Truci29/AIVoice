@@ -1,0 +1,97 @@
+{
+    "intents": [
+        {
+            "tag": "Internet",
+            "patterns": [
+                "va sur Internet",
+                "ouvre le navigateur",
+                "navigue sur le web"
+            ],
+            "responses": []
+        },
+
+        {
+            "tag": "task_add",
+            "patterns": [
+                "ajoute une tâche",
+                "nouvelle tâche",
+                "ajouter tâche"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "task_update",
+            "patterns": [
+                "modifie la tâche",
+                "changer tâche",
+                "mettre à jour tâche"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "task_delete",
+            "patterns": [
+                "supprime la tâche",
+                "enlever tâche",
+                "retirer tâche"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "task_view",
+            "patterns": [
+                "visualise les tâches",
+                "voir les tâches",
+                "affiche les tâches"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "task_tables",
+            "patterns":[
+                "montre moi le tableau des tâches",
+                "affiche le tableau des tâches"
+            ],
+            "responses":[]
+
+        },
+        {
+            "tag": "task_search",
+            "patterns": [
+                "cherche la tâche",
+                "trouve la tâche",
+                "rechercher tâche"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "joke",
+            "patterns": [
+                "raconte une blague",
+                "dis une blague",
+                "faire une blague"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "pdf_read",
+            "patterns": [
+                "lis le pdf",
+                "lire document pdf",
+                "ouvre pdf"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "exit",
+            "patterns": [
+                "exit",
+                "fin",
+                "quitter"
+            ],
+            "responses": [
+                "Au revoir"
+            ]
+        }
+    ]
+}

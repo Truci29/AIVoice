@@ -1,0 +1,22 @@
+-> Pytorch Machine Learning
+
+-> Free js 
+
+-> bot 
+
+-> git hub : build your own x
+
+    -> Créer son propre blockChain
+
+    -> docker
+    
+    -> git
+
+    -> moteur de recherche
+
+    -> éditeur de texte
+
+
+-> faire son propre reddit 
+
+-> faire son propre server http : https://app.codecrafters.io/courses/http-server/overview
