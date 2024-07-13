@@ -1,3 +1,4 @@
+import dateparser
 import datetime
 import json
 import pickle
@@ -89,8 +90,11 @@ def predict_class(sentence):
 # Text-to-speech function
 def speak(text, rate=120):
     engine.setProperty("rate", rate)
+    print("test")
     engine.say(text)
+    print("test")
     engine.runAndWait()
+    print("test")
 
 # Strip accents to improve recognition
 def strip_accents(text):
@@ -154,6 +158,15 @@ def tell_joke():
         return joke
     else:
         return "I couldn't fetch a joke."
+
+def parse_date(expression):
+    # Utilisation de dateparser pour analyser l'expression de date
+    date = dateparser.parse(expression, languages=['fr'])
+    if date:
+        return date
+    else:
+        return "Date non reconnue"
+
 
 # Task Management
 def show_tasks():
@@ -250,7 +263,7 @@ def readPrediction(predictions, intents):
                 speak("Quel est la tâche ?")
                 task = parseCommand().lower()
                 speak("Quelle est la date d'échéance ?")
-                due_date = parseCommand().lower()
+                due_date = parse_date(parseCommand().lower())
                 speak("Quel est la priorité ?")
                 priorite = parseCommand().lower()
                 speak("Quel est la catégorie ?")
@@ -295,8 +308,9 @@ def readPrediction(predictions, intents):
 
 # Main loop with web browser functionality
 if __name__ == "__main__":
+    print("Debut")
     speak("All systems nominal.")
-
+    print("parler")
     while True:
         query = parseCommand().lower().split()
         query = strip_accents(query)
